@@ -13,13 +13,33 @@
         table {
             margin: auto;
         }
+
+        .code {
+            font-size: 30px;
+            width: 120px;
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        @media only screen and (min-width: 480px) {
+            .code {
+                font-size: 50px;
+                width: 170px;
+            }
+
+            .logo {
+                margin-left: 120px;
+            }
+        }
     </style>
 </head>
 
 <body
     style="font-family:Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%;-webkit-text-size-adjust:100%;width:100%;padding-top: 40px; padding-bottom: 40px;">
-    <div style="max-width:800px;margin:auto;background-color:#E5E5E5;padding-top: 40px; padding-bottom: 40px;">
-        <div style="margin-left:120px;margin-bottom:40px;"><img
+    <div style="max-width:800px;margin:auto;background-color:#FFFFFF;padding-top: 40px; padding-bottom: 40px;">
+        <div class="logo" style="margin-bottom:40px;"><img
                 src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png" alt="neivor">
         </div>
         <div>
@@ -29,8 +49,8 @@
             <div
                 style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: 400;text-align: center;margin-bottom: 40px !important;">
                 Este es tu código de verificación:</div>
-            <div
-                style="margin:auto; text-align: center;margin-bottom: 60px !important;font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #7D65FE;font-weight: 700;letter-spacing: 0.2em;padding: 10px;width: 120px;border: solid 2px black; border-radius: 100px;">
+            <div class="code"
+                style="margin:auto; text-align: center;margin-bottom: 60px !important;font-family: Arial, Helvetica, sans-serif; color: #7D65FE;font-weight: 700;letter-spacing: 0.2em;padding: 10px;border: solid 2px black; border-radius: 100px;">
                 {1}</div>
             <div style="text-align:center;margin-bottom:14px;">Recuerda que tu <span style="font-weight: 700;">Nombre de
                     usuario es:</span></div>
@@ -78,6 +98,7 @@
             style="width:90%;margin:auto;font-size:14px;font-weight:400;line-height:16px;text-align:center;line-height:25px;">
             Neivor inc. Av Paseo de la Reforma No. 250-SUITE 800 PISO 8, CDMX</div>
     </div>
+    <div style="display: none">MX-{idEnterprise}</div>
 </body>
 
 </html>
