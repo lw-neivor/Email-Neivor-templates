@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 1em;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            width: 100%;
+            padding-bottom: 40px;
+        }
+
         a {
             color: #7D65FE !important;
             text-decoration: none !important;
@@ -13,79 +26,251 @@
         table {
             margin: auto;
         }
+
+        .button-section {
+            margin-top: 32px;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+
+        .button-section button {
+            cursor: pointer;
+            margin: auto;
+            text-align: center;
+            width: 190px;
+            padding: 8px 16px;
+            gap: 10px;
+            width: 241px;
+            height: 47px;
+            background: #7D65FE;
+            border-radius: 35px;
+            border: none;
+        }
+
+        .div-square {
+            width: 53px;
+            height: 48px;
+            background: #F3F1FA;
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        .div-square img {
+            width: 29px;
+        }
+
+        .table-emoji {
+            width: 255px;
+        }
+
+        .notice-ctn {
+            max-width: 450px;
+            margin-top: 24px;
+            position: relative;
+            top: -36px;
+            background-color: #FFFFFF;
+            margin: auto;
+            padding: 32px 70px;
+            box-shadow: 3.58902px 3.58902px 59.817px rgb(138 138 187 / 30%);
+            border-radius: 8.02432px;
+        }
+
+        .reaction-div {
+            margin: auto;
+            padding: 20px 0px;
+            max-width: 328px;
+            max-height: 130px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 3.58902px 3.58902px 59.817px rgb(138 138 187 / 30%);
+            font-weight: 700;
+            font-size: 1em;
+            line-height: 19px;
+            margin-bottom: 14px;
+        }
+
+        .reaction-div>table>tbody>tr>td>div {
+            margin-bottom: 16px
+        }
+
+        .table-help {
+            width: 77%;
+        }
+
+        @media (max-width: 450px) {
+            .button-section {
+                margin-top: 50px;
+                margin-bottom: 24px;
+            }
+
+            .reaction-div {
+                font-size: 13px !important;
+                max-width: 267.5px;
+                max-height: 106.02px;
+            }
+
+            .reaction-div>td {
+                margin-bottom: 16px
+            }
+
+            .div-square {
+                width: 43.57px;
+                height: 38.79px;
+            }
+
+            .div-square img {
+                width: 23px;
+            }
+
+            .table-emoji {
+                width: 180px;
+            }
+
+            .reaction-div>table>tbody>tr>td>div {
+                margin-bottom: 8px
+            }
+
+            .notice-ctn {
+                max-width: 75%;
+                margin-top: 24px;
+                padding: 24px;
+                top: -60px;
+
+            }
+
+            .table-help {
+                width: 90%;
+            }
+
+        }
     </style>
 </head>
 
-<body
-    style="font-family:Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%;-webkit-text-size-adjust:100%;width:100%; padding-bottom: 40px;">
+<body>
     <div style="max-width:800px;margin:auto;background-color:#FFFFFF;padding-bottom: 40px;">
 
-        <div style="background-color:#f4f1fa;min-height:300px;text-align: center;">
+        <div style="background-color:#f4f1fa;min-height:300px;text-align: center;    padding-bottom: 40px;">
 
             <div style="margin:auto;margin-bottom:11px;padding-top:56px;">
                 <img src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
                     alt="neivor">
             </div>
-            <div
-                style="background-color:#FFFFFF; border-radius:30px;width:230px; min-height:61px; margin:auto; align-self: center;">
-                Nombre de condominio</div>
+            <table
+                style="background-color:#FFFFFF; border-radius:30px;min-width:230px; max-width: 230px; min-height:61px;padding-left: 16px;padding-right: 16px;">
+                <td style="padding-left: 8px;"><img
+                        src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
+                        alt="logo" style="max-width:50px;"></td>
+                <td>Nombre corto</td>
+            </table>
+
             <div
                 style="margin-top:24px; font-weight: 700; font-size: 24px; line-height: 150%;text-align: center;letter-spacing: 0.100304px;max-width: 80%;margin:auto;margin-top:24px;margin-bottom: 24px;">
-                Titulo de la noticia - Puede ser largo</div>
+                Titulo de la noticia - Puede ser largo o no tanto pero puede ocupar todas las line</div>
 
         </div>
+        <div class="notice-ctn">
 
-        <div id="notice-text"
-            style="position: relative;top:-36px;width:75%;background-color:#FFFFFF;margin:auto;padding:32px 24px;box-shadow: 3.58902px 3.58902px 59.817px rgb(138 138 187 / 30%);border-radius: 8.02432px;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, totam quo voluptatem illo distinctio
-                nulla esse exercitationem aliquid necessitatibus corporis doloribus aspernatur ut eius est. Obcaecati
-                ipsum dolorum ratione optio?</p>
-            <img src="" alt="imagen del anuncio">
+            <table>
 
-            <div style="margin-top:32px; margin-bottom:32px;">
-                <button style="margin: auto;text-align: center;width: 190px;display: flex;flex-direction: row;
-                    justify-content: center;align-items: center; padding: 8px 16px; gap: 10px; width: 241px; height: 47px;
-                    background: #7D65FE;border-radius: 35px;">
-                    <span style="font-weight: 700;font-size: 18px;line-height: 22px;text-align: center;letter-spacing: 0.03em; color: #FFFFFF;">
-                        Comentar anuncio
-                    </span>
-                </button>
-            </div>
-            <div id="reaction-div"
-                style="display: flex; flex-direction: column; justify-content: center; align-items: center;
-                margin: auto; padding: 20px 0px; max-width: 267.5px; max-height: 106.02px; background: #FFFFFF; border-radius: 6.52439px;box-shadow: 3.58902px 3.58902px 59.817px rgb(138 138 187 / 30%);">
+                <tr>
+                    <td style="font-size: 1em;">
+                        Estimados condóminos.
+                        Buenos días,
+                        Nos permitimos informar que durante las fuertes lluvias del día 11 de octubre, la zona diamante
+                        y en específico el condominio Emerald & Fiji, no sufrió ningún daño por inundaciones,
+                        desafortunadamente los desperfectos ocasionados fueron en la mayoría en la zona centro de este
+                        puerto de Acapulco.
 
-                <div style="font-weight: 700;font-size: 13.0488px; line-height: 19px;">¿Qué te pareció esta información?
-                </div>
+                        Agradecemos las llamadas de preocupación, nuestros colaboradores pudieron llegar a sus casas y
+                        todos se encuentran bien, deseamos que se encuentren tranquilos cualquier eventualidad con gusto
+                        les estaremos informando.
 
+                        Que tengan un bonito día.
+                    </td>
+                </tr>
+
+                <td>
+                    <img src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
+                        style="width:100%;margin-top: 50px;" alt="imagen del anuncio">
+
+                </td>
+            </table>
+
+
+            <table class="button-section">
+                <td>
+                    <button onclick="window.location.href='https://mx.neivor.com'">
+                        <span
+                            style="font-weight: 700;font-size: 18px;line-height: 22px;text-align: center;letter-spacing: 0.03em; color: #FFFFFF;">
+                            Comentar anuncio
+                        </span>
+                    </button>
+                </td>
+            </table>
+            <div class="reaction-div">
                 <table>
-                    <td style="width: 43.57px;height: 38.79px; background: #F3F1FA; border-radius: 7.33994px;">
-                        <a href="https://ows.io/qs/5tkv5ohg" target="_blank" rel="noopener noreferrer"
-                            style="margin-left: 8px;">❤️</a>
+                    <td>
+                        <div>¿Qué te pareció esta información?</div>
                     </td>
-                    <td style="width: 43.57px;height: 38.79px; background: #F3F1FA; border-radius: 7.33994px;">
-                        <a href="https://ows.io/qs/5tkv5ohg" target="_blank" rel="noopener noreferrer"
-                            style="margin-left: 8px;">👍🏻</a>
-                    </td>
-                    <td style="width: 43.57px;height: 38.79px; background: #F3F1FA; border-radius: 7.33994px;">
-                        <a href="https://ows.io/qs/5tkv5ohg" target="_blank" rel="noopener noreferrer"
-                            style="margin-left: 8px;">🙁</a>
-                    </td>
+                </table>
+                <table class="table-emoji">
+                    <tr>
+                        <td>
+                            <div class="div-square">
+                                <table>
+                                    <td>
+                                        <a href="https://ows.io/qs/5tkv5ohg" target="_blank"
+                                            rel="noopener noreferrer"><img
+                                                src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/❤️.svg"
+                                                style="margin-top:5px;"></a>
+                                    </td>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="div-square">
+                                <table>
+                                    <td>
+                                        <a href="https://ows.io/qs/5tkv5ohg" target="_blank"
+                                            rel="noopener noreferrer"><img
+                                                src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/👍🏻.svg"
+                                                style="margin-top:5px;"></a>
+                                    </td>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="div-square">
+                                <table>
+                                    <td>
+                                        <a href="https://ows.io/qs/5tkv5ohg" target="_blank"
+                                            rel="noopener noreferrer"><img
+                                                src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/🙁.svg"
+                                                style="margin-top:5px;"></a>
+                                    </td>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>
 
-        <div style="width:100%;background-color:#F3F1FA;min-height:102px;margin-bottom:60px;">
-            <div style="height: 20px;"></div>
-            <table>
+
+
+        <div style="max-width: 100%;background-color:#F3F1FA;margin:auto;margin-bottom:60px;padding:22px;">
+            <table class="table-help">
                 <td><img style="margin-right: 8px;"
                         src="https://cdn.neivor.com/cdn/mexico/static/core/logo-neivor-purple-alone.png" alt="soporte">
                 </td>
                 <td> Neivor te mantiene al dia de las novedades de tu condominio. Si tienes dudas <a
                         href="mailto:soporte@neivor.com?Subject=Consulta%20por%20activacion%20de%20cuenta"
-                        style="color:#7D65FE;margin:8px;">contáctanos</a>  </td>
+                        style="color:#7D65FE;margin:8px;">contáctanos</a> </td>
+
             </table>
         </div>
+
+
         <table>
             <td style="width:40%">
                 <hr style="height:0px;width:90%;margin:8px 10px 8px 10px;border-style:solid;background-color:#000000;">
@@ -93,7 +278,8 @@
             <td><a href="https://cutt.ly/jB9x3Db" target="_blank" rel="noopener noreferrer"
                     style="margin-left: 8px;"><img
                         src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/instagram-circle.png"
-                        alt="Instagram"></a> </td>
+                        alt="Instagram"></a>
+            </td>
             <td><a href="https://cutt.ly/yB9c6kE" target="_blank" rel="noopener noreferrer"
                     style="margin-left: 8px;"><img
                         src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/facebook-circle.png" alt="Facebook"></a>
@@ -109,10 +295,13 @@
         <div style="margin-bottom: 60px;"></div>
         <div
             style="width:90%;margin:auto;font-size:14px;font-weight:400;line-height:16px;text-align:center;margin-bottom:24px;">
-            Este correo se envió a los {residentes} de {unidad} en {nombre condominio}. Si no deseas recibirlo, haz clic aquí para desuscribirte.</div>
+            Este correo se envió a los {residentes} de {unidad} en {nombre condominio}. Si no deseas recibirlo, haz clic
+            aquí para desuscribirte.</div>
         <div
             style="width:90%;margin:auto;font-size:14px;font-weight:400;line-height:16px;text-align:center;line-height:25px;">
             Neivor inc. Av Paseo de la Reforma No. 250-SUITE 800 PISO 8, CDMX</div>
+    </div>
+    <div style="display: none">MX-{idEnterprise} </div>
     </div>
 </body>
 
