@@ -145,12 +145,17 @@
         }
     </style>
 </head>
-
+<!-- PARAMETROS
+0 -- direccion de imagen del logo del idEnterprise
+1 -- nombre del Enterprise/condominio
+2 -- titulo de la noticia
+3 -- cuerpo o texto de la noticia
+4 -- url de imagen de la noticia
+parametros finales: {residentes} de {unidad} en {nombre condominio}
+                      {5} de {6} en {1}  -->
 <body>
     <div style="max-width:800px;margin:auto;background-color:#FFFFFF;padding-bottom: 40px;">
-
         <div style="background-color:#f4f1fa;min-height:300px;text-align: center;    padding-bottom: 40px;">
-
             <div style="margin:auto;margin-bottom:11px;padding-top:56px;">
                 <img src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
                     alt="neivor">
@@ -158,14 +163,14 @@
             <table
                 style="background-color:#FFFFFF; border-radius:30px;min-width:230px; max-width: 230px; min-height:61px;padding-left: 16px;padding-right: 16px;">
                 <td style="padding-left: 8px;"><img
-                        src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
+                        src="{0}"
                         alt="logo" style="max-width:50px;"></td>
-                <td>Nombre corto</td>
+                <td>{1}</td>
             </table>
 
             <div
                 style="margin-top:24px; font-weight: 700; font-size: 24px; line-height: 150%;text-align: center;letter-spacing: 0.100304px;max-width: 80%;margin:auto;margin-top:24px;margin-bottom: 24px;">
-                Titulo de la noticia - Puede ser largo o no tanto pero puede ocupar todas las line</div>
+                {2}</div>
 
         </div>
         <div class="notice-ctn">
@@ -174,23 +179,12 @@
 
                 <tr>
                     <td style="font-size: 1em;">
-                        Estimados condóminos.
-                        Buenos días,
-                        Nos permitimos informar que durante las fuertes lluvias del día 11 de octubre, la zona diamante
-                        y en específico el condominio Emerald & Fiji, no sufrió ningún daño por inundaciones,
-                        desafortunadamente los desperfectos ocasionados fueron en la mayoría en la zona centro de este
-                        puerto de Acapulco.
-
-                        Agradecemos las llamadas de preocupación, nuestros colaboradores pudieron llegar a sus casas y
-                        todos se encuentran bien, deseamos que se encuentren tranquilos cualquier eventualidad con gusto
-                        les estaremos informando.
-
-                        Que tengan un bonito día.
+                        {3}
                     </td>
                 </tr>
 
                 <td>
-                    <img src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
+                    <img src="{4}"
                         style="width:100%;margin-top: 50px;" alt="imagen del anuncio">
 
                 </td>
