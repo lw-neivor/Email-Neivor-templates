@@ -5,15 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .logo {
-            border-radius: 20px;
-        }
-
-        .logo img {
-            width: 50px;
-            border-radius: 100px;
-        }
-
         .text-16 {
             font-weight: 700;
             font-size: 1em;
@@ -60,9 +51,7 @@
             background-color: #222222;
         }
 
-        body,
-        #bodyTable,
-        #bodyCell {
+        body {
             height: 100% !important;
             margin: 0;
             padding: 0;
@@ -73,14 +62,6 @@
             border-collapse: collapse;
         }
 
-        table[id=bodyTable] {
-            width: 100% !important;
-            margin: auto;
-            max-width: 800px !important;
-            font-weight: normal;
-        }
-
-        /* Force Hotmail/Outlook.com to display line heights normally. */
         table,
         td {
             mso-table-lspace: 0pt;
@@ -125,45 +106,47 @@
             padding-bottom: 38px;
         }
 
-        .img-pral {
-            min-width: 180px;
+        .img-pral .mobile-img {
+            display: none;
         }
 
-        @media only screen and (max-width: 1700px) {
-            .hidden-lg {
-                display: table !important;
-                overflow: visible !important;
-                max-height: inherit !important;
-            }
+        .img-pral .desktop-img {
+            display: block;
+        }
 
-            .text-center {
-                text-align: center !important;
-            }
+        .hidden-lg {
+            display: table !important;
+            overflow: visible !important;
+            max-height: inherit !important;
+        }
 
-            .pv-5 {
-                padding-top: 5% !important;
-                padding-bottom: 5% !important;
-            }
+        .text-center {
+            text-align: center !important;
+        }
 
-            .col-sm-1 {
-                width: 8.33333333% !important;
-            }
+        .pv-5 {
+            padding-top: 5% !important;
+            padding-bottom: 5% !important;
+        }
 
-            .col-sm-2 {
-                width: 16.66666667% !important;
-            }
+        .col-sm-1 {
+            width: 8.33333333% !important;
+        }
 
-            .col-sm-4 {
-                width: 33.33333333% !important;
-            }
+        .col-sm-2 {
+            width: 16.66666667% !important;
+        }
 
-            .col-sm-6 {
-                width: 50% !important;
-            }
+        .col-sm-4 {
+            width: 33.33333333% !important;
+        }
 
-            .col-sm-12 {
-                width: 100% !important;
-            }
+        .col-sm-6 {
+            width: 50% !important;
+        }
+
+        .col-sm-12 {
+            width: 100% !important;
         }
 
         @media only screen and (min-width: 580px) {
@@ -210,15 +193,19 @@
             }
         }
 
-        @media only screen and (max-width:440px) {
-            .hidde-pd {
-                display: block !important;
+        @media only screen and (max-width:500px) {
+            .img-pral .mobile-img {
+                display: block;
+            }
+
+            .img-pral .desktop-img {
+                display: none;
             }
         }
 
-        @media only screen and (max-width:350px) {
-            .img-pral {
-                min-width: 140px !important;
+        @media only screen and (max-width:445px) {
+            .hidde-pd {
+                display: block !important;
             }
         }
     </style>
@@ -255,17 +242,20 @@
                         </td>
                         <td valign="bottom" class="col-sm-4 height-auto img-pral"
                             style=" text-align:right; width: 170px; height: 203px; color: #222222; font-size: 15px; font-family: Arial, Helvetica, sans-serif;">
-                            <div> <img class="col-sm-12" style="vertical-align: bottom;max-width: 100%;"
+                            <div> <img class="col-sm-12 desktop-img" style="vertical-align: bottom;max-width: 100%;"
                                     src=" https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-0333.png"
+                                    alt=""> </div>
+                            <div> <img class="col-sm-12 mobile-img" style="vertical-align: bottom;max-width: 100%;"
+                                    src=" https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-0334.png"
                                     alt=""> </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="central-ctn" style=" width: 100%; background-color: #FFFFFF;padding-top: 32px;">
+        <div style=" width: 100%; background-color: #FFFFFF;padding-top: 32px;">
             <table style="margin: auto;">
-                <td style="font-weight: 700; font-size: 20px; line-height: 150%;margin-top:32px;">¡Hola, {1}!</td>
+                <td style="font-weight: 700; font-size: 20px; line-height: 150%;margin-top:32px;"> ¡Hola, {1}!</td>
             </table>
             <table
                 style="max-width:80%;margin: auto;padding-top: 32px;text-align: center; padding-bottom: 32px; font-size: 20px;line-height: 150%;text-align: center;letter-spacing: -0.019em;">
@@ -369,11 +359,11 @@
                         </td>
                         <td
                             style="font-family: Arial; font-style: normal;font-weight: 400; font-size: 16px;line-height: 140.5%;">
-                            <span style="font-weight:700"> Registra</span> tus visitas en línea, y mas </td>
+                            <span style="font-weight:700"> Registra</span> tus visitas en línea, y más </td>
                     </tr>
                 </table>
             </div>
-            <table tyle="margin: auto; max-width: 100%;">
+            <table style="margin: auto; max-width: 100%;">
                 <tr>
                     <div
                         style="margin:auto; font-family: Arial;font-style: normal; font-weight: 700; font-size: 20px; line-height: 23px; padding-top:40px; padding-bottom: 16px;text-align: center;">
@@ -432,7 +422,7 @@
                     <td class="col-sm-2 text-center pv-5"
                         style=" text-align:left; width: 183px; padding: 20px 0; color: #222222; font-size: 14px; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif;">
                         <div> <img class="col-sm-12"
-                                src=" https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-08.png"
+                                src="https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-08.png"
                                 alt=""> </div>
                     </td>
                     <td class="col-sm-6 text-center pv-5"
