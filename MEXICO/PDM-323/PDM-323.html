@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #222222;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .col-sm-1 {
+            width: 8.33333333% !important;
+        }
+
+        .col-sm-2 {
+            width: 16.66666667% !important;
+        }
+
+        .col-sm-4 {
+            width: 33.33333333% !important;
+        }
+
+        .col-sm-6 {
+            width: 50% !important;
+        }
+
+        .col-sm-12 {
+            width: 100% !important;
+        }
+
+        .notice-ctn {
+            position: relative;
+            width: 75%;
+            background-color: #FFFF;
+            margin: auto;
+            padding: 16px !important;
+            border-radius: 8px;
+            border: solid 1px #DDDD;
+            max-width: 590px;
+        }
+
+        .notice-ctn::before {
+            content: "";
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            color: white;
+            background-color: white;
+            position: absolute;
+            top: 22%;
+            left: -5%;
+            box-shadow: inset -13px 3px 7px -7px rgb(16 24 40 / 10%);
+        }
+
+        .notice-ctn::after {
+            content: "";
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            color: white;
+            background-color: white;
+            position: absolute;
+            top: 22%;
+            right: -5%;
+            box-shadow: inset 13px 3px 7px -7px rgba(16 24 40 / 10%);
+        }
+
+        .button-section {
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            margin: auto;
+            text-align: center;
+            padding: 16px 64px 16px 64px;
+            height: 20px;
+            background: #7D65FE;
+            border-radius: 35px;
+            border: none;
+        }
+
+        .detail-pay {
+            margin: auto;
+            width: 80%;
+        }
+
+        .fz14-fw400 {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            color: #222222;
+        }
+
+        .purple-svg {
+            -webkit-filter: invert(36%) sepia(64%) saturate(1756%) hue-rotate(229deg) brightness(101%) contrast(99%);
+            filter: invert(36%) sepia(64%) saturate(1756%) hue-rotate(229deg) brightness(101%) contrast(99%);
+        }
+
+        hr {
+            width: 90%;
+            color: #dad4d445;
+        }
+
+        @media only screen and (max-width:620px) {
+            .detail-pay {
+                margin: auto;
+                width: 100%;
+            }
+
+            .notice-ctn {
+                padding: 32px 24px !important;
+            }
+
+            .button-section {
+                padding: 16px 24px 16px 24px;
+                height: auto;
+            }
+
+            .hidden {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="font-family: Arial, Helvetica, sans-serif;-webkit-font-smoothing: antialiased;font-size: 1em;line-height: 1.4;margin: 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;width: 100%;padding-bottom: 40px; background-color: #fafafa;">
+    <div style="max-width:800px;margin:auto;background-color:#FFFFFF;border:solid 1px #DDDD; padding-bottom:40px;">
+        <!-- HEADER -->
+        <div style="width: 100%;text-align: center;background-color: #F3F1FA;margin:auto;height: 112px;">
+            <!-- LOGO AND NAME OF CONDO -->
+            <div style="padding-bottom: 35px;"></div>
+            <table style="margin:auto;">
+                <tr>
+                    <td>
+                        <div style="margin-right: 20px;"> <img
+                                src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/neivor-purple-logo-and-name.png"
+                                alt="neivor"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Tecnología para las viviendas de la era digital </td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding-bottom: 18px;"></div>
+        <table class="col-sm-12 height-auto" border="0" cellpadding="0" cellspacing="0" width="100%"
+            style="width: 100%; max-width: 100%; min-width: 100%;">
+            <tbody>
+                <td>
+                    <div
+                        style="font-family: Arial; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; text-align: center; color: #222222;max-width: 450px;margin:auto; ">
+                        <span style="max-width: 450px;margin:auto; font-weight: 700;">Hola, {Nombre}</span><br /> ¡Hemos
+                        recibido el pago de tu </br> {licencia de Neivor}! </div>
+                </td>
+            </tbody>
+        </table>
+        <div style="padding-bottom: 38px;"></div> <!-- DETALLE CONTAINER -->
+        <div class="notice-ctn"
+            style="width: 75%; background-color: #FFFF; margin: auto; padding: 32px 24px; border-radius: 8px; border: solid 1px #DDDD;">
+            <table style="margin: auto;text-align: center;">
+                <tr>
+                    <td> <img class="purple-svg"
+                            src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/interface/document-edit-pen.svg"
+                            alt="icon" style="width: 35px;margin:auto;"> </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-family: Arial; font-style: normal; font-weight: 700; font-size: 20px; line-height: 21px; color: #222222;">
+                        Detalle del pago</td>
+                </tr>
+                <tr>
+                    <td><span class="fz14-fw400" style="font-size: 16px; line-height: 16px; text-align: center;">Total
+                            pagado:</span><span
+                            style="font-family: Arial;font-style: normal;font-weight: 400;font-size: 16px;line-height: 16px;/* identical to box height, or 99% */text-align: center;/* Text/Primario */color: #222222;">
+                            $63,000.00</span> </td>
+                </tr>
+            </table>
+            <div style="padding-bottom: 14px;"></div>
+            <hr>
+            <div style="padding-bottom: 28px;"></div>
+            <table style="" class="detail-pay">
+                <tr>
+                    <td class="fz14-fw400"> Fecha de pago:</td>
+                    <td class="fz14-fw400" style="font-weight: 700; text-align: right;"> 2022/01/11</td>
+                </tr>
+                <tr>
+                    <td class="fz14-fw400"> Método de pago:</td>
+                    <td class="fz14-fw400" style="font-weight: 700; text-align: right;"> Transferencia SPEI</td>
+                </tr>
+                <tr>
+                    <td class="fz14-fw400"> Clabe de rastreo:</td>
+                    <td class="fz14-fw400" style="font-weight: 700; text-align: right;"> 123469874569</td>
+                </tr>
+            </table>
+            <div style="padding-bottom: 14px;"></div>
+            <hr>
+            <div style="padding-bottom: 14px;"></div>
+            <table style="margin: auto;text-align: center;">
+                <tr>
+                    <td><img style="width:18px;margin-top:12px;"
+                            src="https://cdn.neivor.com/cdn/mexico/static/ds/icons/office/path.png" alt="neivor"></td>
+                </tr>
+                <tr>
+                    <td>Encuentra adjunto la factura de tu pago</td>
+                </tr>
+            </table>
+        </div> <!-- CTA -->
+        <div style="padding-bottom: 38px;"></div>
+        <table style="margin:auto; width: 80%;">
+            <tr>
+                <td><a ses:no-track target="_blank" href="#" style="text-decoration: none;">
+                        <div class="button-section"
+                            style="font-weight: 700;font-size: 16px;line-height: 22px;text-align: center;letter-spacing: 0.03em; color: #FFFFFF;">
+                            Ingresar a Neivor </div>
+                    </a></td>
+            </tr>
+        </table>
+        <div style=" width: 100%; background-color: #FFFFFF;">
+            <div style="padding-bottom: 38px;"> </div> <!-- HELP SECTION -->
+            <div style="max-width: 100%;background-color:#F3F1FA;margin:auto;padding:22px;font-size: 14px;">
+                <table style="margin: auto;" class="table-help">
+                    <td><img style="margin-right: 20px;"
+                            src="https://cdn.neivor.com/cdn/mexico/static/core/logo-neivor-purple-alone.png"
+                            alt="soporte"> </td>
+                    <td>
+                        <div style="max-width: 450px; line-height: 21px;">¿Necesitas ayuda para verificar tu pago? </br>
+                            <a href="mailto:soporte@neivor.com?Subject=Consulta"
+                                style="color:#7D65FE;text-decoration-line: underline !important;">No dudes en
+                                contactarnos</a> </div>
+                    </td>
+                </table>
+            </div> <!-- SOCIAL SECTION -->
+            <table class="col-sm-12 height-auto" border="0" cellpadding="0" cellspacing="0" width="100%"
+                style="width: 100%; max-width: 100%; min-width: 100%;">
+                <tbody>
+                    <tr>
+                        <td class="col-sm-1 text-center pv-5"
+                            style=" text-align:left; width: 140px; padding: 20px 0; color: #222222; font-size: 14px; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif;">
+                            <div> &nbsp; </div>
+                        </td>
+                        <td class="col-sm-2 text-center pv-5"
+                            style=" text-align:left; width: 183px; padding: 20px 0; color: #222222; font-size: 14px; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif;">
+                            <div> <img class="col-sm-12"
+                                    src="https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-08.png"
+                                    alt=""> </div>
+                        </td>
+                        <td class="col-sm-6 text-center pv-5"
+                            style=" text-align:center; width: 154px; padding: 20px 0; color: #222222; font-size: 14px; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif;">
+                            <div> <a href="https://cutt.ly/jB9x3Db" target="_blank"> <img
+                                        src=" https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/instagram-circle.png">
+                                </a>&nbsp;&nbsp; <a href="https://cutt.ly/yB9c6kE" target="_blank"><img
+                                        src=" https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/facebook-circle.png"></a>&nbsp;&nbsp;&nbsp;
+                                <a href="https://cutt.ly/7B9vklr" target="_blank"><img
+                                        src="https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/linkedin-circle.png"></a>&nbsp;&nbsp;
+                                <a href="https://cutt.ly/7B9vklr" target="_blank"><img
+                                        src="https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-0111.png"></a>&nbsp;&nbsp;
+                            </div>
+                        </td>
+                        <td class="col-sm-2 text-center pv-5"
+                            style="text-align:left; width: 183px; padding: 20px 0; color: #222222; font-size: 14px; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif;">
+                            <div> <img class="col-sm-12"
+                                    src="https://cdn.neivor.com/cdn/mexico/static/emailTemplate/temp-72-condos/nv-001-08.png"
+                                    alt=""> </div>
+                        </td>
+                        <td class="col-sm-1 text-center pv-5"
+                            style=" text-align:left; width: 140px; padding: 20px 0; color: #222222; font-size: 14px; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif;">
+                            <div> &nbsp; </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-bottom: 32px;"></div>
+            <div
+                style="width:90%;margin:auto;font-size:14px;font-weight:400;line-height:16px;text-align:center;margin-bottom:24px;">
+                Neivor es la plataforma que te ayuda a optimizar la forma en que administras tu negocio. Puedes recibir
+                estas comunicaciones o<a ses:no-track href="{unsubscribe}" target="_blank"
+                    style="color: #7D65FE;text-decoration-line: underline !important;"> haz clic aquí para darte de
+                    baja.</a> </div>
+            <div
+                style="width:90%;margin:auto;font-size:14px;font-weight:400;line-height:16px;text-align:center;line-height:25px;">
+                Neivor inc. Av Paseo de la Reforma No. 250-SUITE 800 PISO 8, CDMX</div>
+        </div>
+    </div>
+    <div style="display: none">MX-{idEnterprise} </div>
+</body>
+
+</html>
